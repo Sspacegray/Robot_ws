@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- 首先启动硬件驱动，修改为使用rplidar驱动，与RobotCar.launch保持一致 -->
+  <!-- <include file="$(find oradar_ros)/launch/ms500_scan_view.launch" /> -->
+  <include file="$(find RobotCar)/launch/vanjee_716mini_lidar_01.launch" /> 
+
+
+  <include file="$(find RobotCar)/launch/serial_communication_pub.launch" /> 
+  
+  <include file="$(find RobotCar)/launch/laser_tf.launch" />
+
+  <!-- 启动URDF和可视化 -->
+  <include file="$(find RobotCar)/launch/urdf.launch">
+    <arg name="gui" value="false"/>
+    <arg name="start_rviz" value="false"/>
+  </include>
+
+  <!-- 启动Cartographer纯定位 -->
+  <include file="$(find RobotCar)/launch/nav08_cartographer_localization.launch">
+    <!-- 确保使用系统中已存在的地图文件 -->
+    <arg name="cartographer_map_file" value="$(find RobotCar)/map/0515.pbstream"/>
+    <arg name="navigation_map_file" value="$(find RobotCar)/map/0515.yaml"/>
+
+  </include>
+  
+<!-- 启动多点导航节点 -->
+  <node pkg="RobotCar" type="send_goals_node" name="multi_point_navigation" output="screen">
+    <!-- 加载路径点参数文件 -->
+    <rosparam command="load" file="$(find RobotCar)/config/waypoints.yaml" />
+    <!-- 节点参数 -->
+    <param name="frame_id" value="map" />
+    <param name="wait_seconds" value="1.0" />
+    <param name="total_loops" value="1" /> <!-- 设置循环3次 -->
+    <param name="recovery_delay_seconds" value="3.0" /> <!-- 设置循环3次 -->	
+    <param name="waypoint_timeout_seconds" value="120.0" /> <!-- 尝试到达单个航点所允许的最大时间 -->
+  </node>
+
+  <!-- 启动RViz可视化 -->
+  <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find RobotCar)/rviz/demo_2d.rviz" /> -->
+</launch> 

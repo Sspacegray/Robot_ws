@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/gennodejs/ros/xf_mic_asr_offline/srv/Start_Record_srv.js

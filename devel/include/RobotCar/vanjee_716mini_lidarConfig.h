@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/RobotCar/include/RobotCar/vanjee_716mini_lidarConfig.h

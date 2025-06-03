@@ -1,0 +1,42 @@
+local_costmap:
+  global_frame: odom
+  robot_base_frame: base_footprint
+
+  update_frequency: 5.0  # 降低更新频率，减轻计算负担
+  publish_frequency: 5.0  # 降低发布频率
+  transform_tolerance: 0.5
+  track_unknown_space: false
+
+  inflation_radius: 0.32  # 增加膨胀半径，提高安全性
+  cost_scaling_factor: 8.0  # 降低代价衰减速率，使膨胀更平滑
+
+  # static_map: false  # 是否使用静态地图
+  rolling_window: true
+  width: 3  # 调回适当的宽度
+  height: 3  # 调回适当的高度 
+  resolution: 0.05
+  
+  plugins:
+    - {name: obstacle_layer,      type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation_layer,     type: "costmap_2d::InflationLayer"}
+    # - {name: virtual_wall,        type: "virtual_wall::VirtualWall"}
+
+  inflation_layer:
+    enabled: true
+    cost_scaling_factor: 8.0  # 降低代价衰减速率
+    inflation_radius: 0.33  # 增加膨胀半径
+  
+  obstacle_layer:
+    enabled: true
+    observation_sources: scan
+    scan: {sensor_frame: laser, data_type: LaserScan, topic: scan, marking: true, clearing: true, inf_is_valid: true, min_obstacle_height: 0.0, max_obstacle_height: 0.5}
+    clear_on_max_reading: true
+    combination_method: 1
+    obstacle_max_range: 2.5
+    obstacle_min_range: 0.2
+    raytrace_max_range: 3.0
+    raytrace_min_range: 0.0
+    max_obstacle_height: 2.0
+    min_obstacle_height: 0.0
+    track_unknown_space: false
+  

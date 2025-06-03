@@ -1,0 +1,8 @@
+prefix=/home/agrobot/Robot_ws/devel/.private/RobotCar
+
+Name: RobotCar
+Description: Description of RobotCar
+Version: 0.0.0
+Cflags: -I/home/agrobot/Robot_ws/devel/.private/RobotCar/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msg

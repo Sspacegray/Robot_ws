@@ -1,0 +1,13 @@
+** WARNING ** io features related to pcap will be disabled
+** WARNING ** io features related to png will be disabled
+** WARNING ** io features related to libusb-1.0 will be disabled
+[33m[1mCMake Warning[0m at /usr/src/googletest/googlemock/CMakeLists.txt:43 (project):
+  VERSION keyword not followed by a value or was followed by a value that
+  expanded to nothing.
+
+
+[33m[1mCMake Warning[0m at /usr/src/googletest/googletest/CMakeLists.txt:54 (project):
+  VERSION keyword not followed by a value or was followed by a value that
+  expanded to nothing.
+
+

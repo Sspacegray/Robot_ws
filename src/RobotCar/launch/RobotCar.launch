@@ -1,0 +1,28 @@
+<launch>
+    <!-- 首先启动硬件驱动 -->
+    <!-- <include file="$(find oradar_ros)/launch/ms500_scan_view.launch" /> -->
+    <include file="$(find RobotCar)/launch/vanjee_716mini_lidar_01.launch" />
+    <!-- <include file="$(find xf_mic_asr_offline)/launch/mic_init.launch" /> -->
+    <include file="$(find RobotCar)/launch/serial_communication_pub.launch" /> 
+    <!-- <include file="$(find RobotCar)/launch/laser_tf.launch" /> -->
+     <!-- <include file="$(find RobotCar)/launch/camera.launch" /> -->
+
+    <!-- 启动URDF和可视化 -->
+    <include file="$(find RobotCar)/launch/urdf.launch">
+        <arg name="gui" value="true"/>
+        <arg name="start_rviz" value="false"/>
+    </include>
+
+    <!-- 注释掉建图模式，使用纯定位模式 -->
+    <!-- <include file="$(find RobotCar)/launch/nav10_cartographer_build_online.launch">
+        <arg name="start_rviz" value="true"/>
+    </include> -->
+    <!-- <include file="$(find RobotCar)/launch/nav05_path.launch"> -->
+
+    <!-- 启动Cartographer纯定位和导航 -->
+    <include file="$(find RobotCar)/launch/nav08_cartographer_localization.launch">
+        <arg name="cartographer_map_file" value="$(find RobotCar)/map/0515.pbstream"/>  
+        <arg name="navigation_map_file" value="$(find RobotCar)/map/0515.yaml"/>
+    </include>
+
+</launch>

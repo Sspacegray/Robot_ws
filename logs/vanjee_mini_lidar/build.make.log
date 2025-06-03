@@ -1,0 +1,32 @@
+[35m[1mScanning dependencies of target vanjee_mini_lidar_gencfg[0m
+[  6%] [34m[1mGenerating dynamic reconfigure files from cfg/vanjee_718mini_lidar.cfg: /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/include/vanjee_mini_lidar/vanjee_718mini_lidarConfig.h /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/lib/python3/dist-packages/vanjee_mini_lidar/cfg/vanjee_718mini_lidarConfig.py[0m
+[35m[1mScanning dependencies of target vanjee_xxx[0m
+Generating reconfiguration files for vanjee_718mini_lidar in vanjee_mini_lidar
+Wrote header file in /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/include/vanjee_mini_lidar/vanjee_718mini_lidarConfig.h
+[ 12%] [34m[1mGenerating dynamic reconfigure files from cfg/vanjee_716mini_lidar.cfg: /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/include/vanjee_mini_lidar/vanjee_716mini_lidarConfig.h /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/lib/python3/dist-packages/vanjee_mini_lidar/cfg/vanjee_716mini_lidarConfig.py[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/vanjee_xxx.dir/src/vanjee_common_tcp.cpp.o[0m
+Generating reconfiguration files for vanjee_716mini_lidar in vanjee_mini_lidar
+Wrote header file in /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/include/vanjee_mini_lidar/vanjee_716mini_lidarConfig.h
+[ 25%] [34m[1mGenerating dynamic reconfigure files from cfg/vanjee_718h_lidar.cfg: /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/include/vanjee_mini_lidar/vanjee_718h_lidarConfig.h /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/lib/python3/dist-packages/vanjee_mini_lidar/cfg/vanjee_718h_lidarConfig.py[0m
+Generating reconfiguration files for vanjee_718h_lidar in vanjee_mini_lidar
+Wrote header file in /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/include/vanjee_mini_lidar/vanjee_718h_lidarConfig.h
+[ 25%] Built target vanjee_mini_lidar_gencfg
+[ 31%] [32mBuilding CXX object CMakeFiles/vanjee_xxx.dir/src/vanjee_common_udp.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/vanjee_xxx.dir/src/vanjee_abstract_protocol.cpp.o[0m
+[ 43%] [32m[1mLinking CXX shared library /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/lib/libvanjee_xxx.so[0m
+[ 43%] Built target vanjee_xxx
+[35m[1mScanning dependencies of target vanjee_718mini_lidar[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/vanjee_718mini_lidar.dir/src/vanjee_718mini_lidar_protocol.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/vanjee_718mini_lidar.dir/src/vanjee_718mini_node.cpp.o[0m
+[35m[1mScanning dependencies of target vanjee_716mini_lidar[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/vanjee_716mini_lidar.dir/src/vanjee_716mini_lidar_protocol.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/vanjee_716mini_lidar.dir/src/vanjee_716mini_node.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/lib/vanjee_mini_lidar/vanjee_718mini_lidar[0m
+[35m[1mScanning dependencies of target vanjee_718h_lidar[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/vanjee_718h_lidar.dir/src/vanjee_718h_lidar_protocol.cpp.o[0m
+[ 81%] Built target vanjee_718mini_lidar
+[ 87%] [32mBuilding CXX object CMakeFiles/vanjee_718h_lidar.dir/src/vanjee_718h_node.cpp.o[0m
+[ 93%] [32m[1mLinking CXX executable /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/lib/vanjee_mini_lidar/vanjee_716mini_lidar[0m
+[ 93%] Built target vanjee_716mini_lidar
+[100%] [32m[1mLinking CXX executable /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/lib/vanjee_mini_lidar/vanjee_718h_lidar[0m
+[100%] Built target vanjee_718h_lidar

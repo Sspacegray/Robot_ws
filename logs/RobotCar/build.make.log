@@ -1,0 +1,303 @@
+[35m[1mScanning dependencies of target _RobotCar_generate_messages_check_deps_carinfo[0m
+[35m[1mScanning dependencies of target control_toolbox_generate_messages_lisp[0m
+[  0%] Built target control_toolbox_generate_messages_lisp
+[35m[1mScanning dependencies of target _RobotCar_generate_messages_check_deps_robotinfo[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target _RobotCar_generate_messages_check_deps_voice2robot[0m
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _RobotCar_generate_messages_check_deps_carinfo
+[35m[1mScanning dependencies of target _RobotCar_generate_messages_check_deps_web2robot[0m
+[35m[1mScanning dependencies of target gazebo_msgs_generate_messages_eus[0m
+[  0%] Built target _RobotCar_generate_messages_check_deps_robotinfo
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[  0%] Built target gazebo_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_eus[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target move_base_msgs_generate_messages_cpp[0m
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target _RobotCar_generate_messages_check_deps_voice2robot
+[  0%] Built target move_base_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+[  0%] Built target _RobotCar_generate_messages_check_deps_web2robot
+[35m[1mScanning dependencies of target RobotCar_gencfg[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target tf_generate_messages_py[0m
+[  2%] [34m[1mGenerating dynamic reconfigure files from config/vanjee_716mini_lidar.cfg: /home/agrobot/Robot_ws/devel/.private/RobotCar/include/RobotCar/vanjee_716mini_lidarConfig.h /home/agrobot/Robot_ws/devel/.private/RobotCar/lib/python3/dist-packages/RobotCar/cfg/vanjee_716mini_lidarConfig.py[0m
+[35m[1mScanning dependencies of target trajectory_msgs_generate_messages_cpp[0m
+[  2%] Built target std_msgs_generate_messages_nodejs
+[  2%] Built target actionlib_msgs_generate_messages_nodejs
+[  2%] Built target tf_generate_messages_py
+[  2%] Built target trajectory_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target actionlib_generate_messages_py[0m
+[35m[1mScanning dependencies of target control_toolbox_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target control_toolbox_generate_messages_py[0m
+Generating reconfiguration files for vanjee_716mini_lidar in RobotCar
+[35m[1mScanning dependencies of target controller_manager_msgs_generate_messages_py[0m
+[  2%] Built target actionlib_generate_messages_py
+Wrote header file in /home/agrobot/Robot_ws/devel/.private/RobotCar/include/RobotCar/vanjee_716mini_lidarConfig.h
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_cpp[0m
+[  2%] Built target control_toolbox_generate_messages_cpp
+[  2%] Built target control_toolbox_generate_messages_py
+[35m[1mScanning dependencies of target actionlib_generate_messages_eus[0m
+[  2%] Built target actionlib_msgs_generate_messages_cpp
+[  2%] Built target controller_manager_msgs_generate_messages_py
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[  2%] Built target RobotCar_gencfg
+[35m[1mScanning dependencies of target trajectory_msgs_generate_messages_py[0m
+[  2%] Built target actionlib_generate_messages_eus
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[35m[1mScanning dependencies of target control_msgs_generate_messages_lisp[0m
+[  2%] Built target rosgraph_msgs_generate_messages_cpp
+[  2%] Built target trajectory_msgs_generate_messages_py
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[  2%] Built target sensor_msgs_generate_messages_nodejs
+[  2%] Built target sensor_msgs_generate_messages_eus
+[  2%] Built target control_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_eus[0m
+[  2%] Built target roscpp_generate_messages_py
+[35m[1mScanning dependencies of target gazebo_ros_gencfg[0m
+[  2%] Built target tf2_msgs_generate_messages_eus
+[  2%] Built target sensor_msgs_generate_messages_cpp
+[  2%] Built target geometry_msgs_generate_messages_py
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target bond_generate_messages_cpp[0m
+[  2%] Built target gazebo_ros_gencfg
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_nodejs[0m
+[  2%] Built target sensor_msgs_generate_messages_py
+[  2%] Built target actionlib_msgs_generate_messages_lisp
+[  2%] Built target tf2_msgs_generate_messages_py
+[  2%] Built target bond_generate_messages_cpp
+[  2%] Built target rosgraph_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target actionlib_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_srvs_generate_messages_py[0m
+[  2%] Built target dynamic_reconfigure_generate_messages_nodejs
+[35m[1mScanning dependencies of target tf_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[  2%] Built target actionlib_generate_messages_nodejs
+[  2%] Built target std_srvs_generate_messages_py
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target tf_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target control_msgs_generate_messages_eus[0m
+[  2%] Built target tf_generate_messages_cpp
+[  2%] Built target geometry_msgs_generate_messages_lisp
+[  2%] Built target roscpp_generate_messages_nodejs
+[  2%] Built target tf_generate_messages_lisp
+[  2%] Built target control_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[  2%] Built target geometry_msgs_generate_messages_cpp
+[  2%] Built target nav_msgs_generate_messages_py
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_py[0m
+[  2%] Built target roscpp_generate_messages_cpp
+[  2%] Built target actionlib_msgs_generate_messages_eus
+[  2%] Built target roscpp_generate_messages_eus
+[35m[1mScanning dependencies of target visualization_msgs_generate_messages_cpp[0m
+[  2%] Built target dynamic_reconfigure_generate_messages_py
+[35m[1mScanning dependencies of target trajectory_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target tf_generate_messages_eus[0m
+[  2%] Built target rosgraph_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target gazebo_plugins_gencfg[0m
+[35m[1mScanning dependencies of target std_srvs_generate_messages_cpp[0m
+[  2%] Built target visualization_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target actionlib_generate_messages_lisp[0m
+[  2%] Built target trajectory_msgs_generate_messages_eus
+[  2%] Built target tf_generate_messages_eus
+[35m[1mScanning dependencies of target gazebo_msgs_generate_messages_nodejs[0m
+[  2%] Built target actionlib_generate_messages_lisp
+[35m[1mScanning dependencies of target controller_manager_msgs_generate_messages_lisp[0m
+[  2%] Built target gazebo_plugins_gencfg
+[35m[1mScanning dependencies of target actionlib_generate_messages_cpp[0m
+[  2%] Built target std_srvs_generate_messages_cpp
+[  2%] Built target controller_manager_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[  2%] Built target actionlib_generate_messages_cpp
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_lisp[0m
+[  2%] Built target gazebo_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target gazebo_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target gazebo_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_lisp[0m
+[  2%] Built target rosgraph_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target tf_generate_messages_nodejs[0m
+[  2%] Built target dynamic_reconfigure_generate_messages_lisp
+[  2%] Built target std_msgs_generate_messages_eus
+[  2%] Built target gazebo_msgs_generate_messages_py
+[  2%] Built target gazebo_msgs_generate_messages_cpp
+[  2%] Built target nodelet_generate_messages_lisp
+[  2%] Built target tf_generate_messages_nodejs
+[35m[1mScanning dependencies of target control_toolbox_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target trajectory_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target trajectory_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_srvs_generate_messages_eus[0m
+[  2%] Built target control_toolbox_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_srvs_generate_messages_lisp[0m
+[  2%] Built target trajectory_msgs_generate_messages_lisp
+[  2%] Built target geometry_msgs_generate_messages_eus
+[  2%] Built target trajectory_msgs_generate_messages_nodejs
+[  2%] Built target std_srvs_generate_messages_eus
+[  2%] Built target roscpp_generate_messages_lisp
+[  2%] Built target std_srvs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_srvs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_py[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_cpp[0m
+[  2%] Built target std_srvs_generate_messages_nodejs
+[35m[1mScanning dependencies of target controller_manager_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target control_msgs_generate_messages_nodejs[0m
+[  2%] Built target sensor_msgs_generate_messages_lisp
+[  2%] Built target tf2_msgs_generate_messages_nodejs
+[  2%] Built target nodelet_generate_messages_cpp
+[  2%] Built target nodelet_generate_messages_py
+[35m[1mScanning dependencies of target nodelet_generate_messages_eus[0m
+[  2%] Built target controller_manager_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target bond_generate_messages_eus[0m
+[35m[1mScanning dependencies of target bond_generate_messages_lisp[0m
+[  2%] Built target control_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target bond_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target bond_generate_messages_py[0m
+[  2%] Built target nodelet_generate_messages_eus
+[  2%] Built target bond_generate_messages_eus
+[  2%] Built target bond_generate_messages_lisp
+[35m[1mScanning dependencies of target visualization_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_cpp[0m
+[  2%] Built target bond_generate_messages_py
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_eus[0m
+[  2%] Built target bond_generate_messages_nodejs
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_cpp[0m
+[  2%] Built target visualization_msgs_generate_messages_eus
+[  2%] Built target nav_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target dynamic_reconfigure_gencfg[0m
+[  2%] Built target nav_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_cpp[0m
+[  2%] Built target nav_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target move_base_msgs_generate_messages_nodejs[0m
+[  2%] Built target dynamic_reconfigure_gencfg
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[  2%] Built target tf2_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target visualization_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target visualization_msgs_generate_messages_nodejs[0m
+[  2%] Built target dynamic_reconfigure_generate_messages_cpp
+[  2%] Built target move_base_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target visualization_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_nodejs[0m
+[  2%] Built target rosgraph_msgs_generate_messages_py
+[  2%] Built target visualization_msgs_generate_messages_lisp
+[  2%] Built target visualization_msgs_generate_messages_nodejs
+[  2%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target controller_manager_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target controller_manager_msgs_generate_messages_nodejs[0m
+[  2%] Built target nodelet_generate_messages_nodejs
+[  2%] Built target visualization_msgs_generate_messages_py
+[35m[1mScanning dependencies of target control_toolbox_gencfg[0m
+[  2%] Built target controller_manager_msgs_generate_messages_cpp
+[  2%] Built target controller_manager_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target gazebo_msgs_generate_messages_lisp[0m
+[  2%] Built target std_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_nodejs[0m
+[  2%] Built target control_toolbox_gencfg
+[35m[1mScanning dependencies of target control_toolbox_generate_messages_eus[0m
+[35m[1mScanning dependencies of target control_msgs_generate_messages_cpp[0m
+[  2%] Built target gazebo_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target control_msgs_generate_messages_py[0m
+[  2%] Built target nav_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target move_base_msgs_generate_messages_eus[0m
+[  2%] Built target control_toolbox_generate_messages_eus
+[  2%] Built target control_msgs_generate_messages_py
+[  2%] Built target control_msgs_generate_messages_cpp
+[  2%] Built target actionlib_msgs_generate_messages_py
+[35m[1mScanning dependencies of target move_base_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target RobotCar_generate_messages_cpp[0m
+[  2%] Built target move_base_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target move_base_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target RobotCar_generate_messages_py[0m
+[  5%] [34m[1mGenerating C++ code from RobotCar/carinfo.msg[0m
+[35m[1mScanning dependencies of target RobotCar_xacro_generated_to_devel_space_[0m
+[35m[1mScanning dependencies of target RobotCar_generate_messages_eus[0m
+[35m[1mScanning dependencies of target RobotCar_generate_messages_nodejs[0m
+[  7%] [34m[1mGenerating Python from MSG RobotCar/carinfo[0m
+[  7%] Built target move_base_msgs_generate_messages_lisp
+[  7%] Built target move_base_msgs_generate_messages_py
+[ 10%] [34m[1mGenerating Javascript code from RobotCar/carinfo.msg[0m
+[ 12%] [34m[1mGenerating C++ code from RobotCar/robotinfo.msg[0m
+[ 12%] Built target RobotCar_xacro_generated_to_devel_space_
+[ 15%] [34m[1mGenerating EusLisp code from RobotCar/carinfo.msg[0m
+[ 17%] [34m[1mGenerating EusLisp code from RobotCar/robotinfo.msg[0m
+[ 20%] [34m[1mGenerating Javascript code from RobotCar/robotinfo.msg[0m
+[ 22%] [34m[1mGenerating Python from MSG RobotCar/robotinfo[0m
+[ 25%] [34m[1mGenerating EusLisp code from RobotCar/web2robot.srv[0m
+[ 27%] [34m[1mGenerating Javascript code from RobotCar/web2robot.srv[0m
+[ 30%] [34m[1mGenerating Javascript code from RobotCar/voice2robot.srv[0m
+[ 32%] [34m[1mGenerating EusLisp code from RobotCar/voice2robot.srv[0m
+[ 35%] [34m[1mGenerating C++ code from RobotCar/web2robot.srv[0m
+[ 37%] [34m[1mGenerating Python code from SRV RobotCar/web2robot[0m
+[ 40%] [34m[1mGenerating Python code from SRV RobotCar/voice2robot[0m
+[ 40%] Built target RobotCar_generate_messages_nodejs
+[35m[1mScanning dependencies of target RobotCar_generate_messages_lisp[0m
+[ 42%] [34m[1mGenerating EusLisp manifest code for RobotCar[0m
+[ 45%] [34m[1mGenerating Lisp code from RobotCar/carinfo.msg[0m
+[ 47%] [34m[1mGenerating C++ code from RobotCar/voice2robot.srv[0m
+[ 50%] [34m[1mGenerating Lisp code from RobotCar/robotinfo.msg[0m
+[ 52%] [34m[1mGenerating Lisp code from RobotCar/web2robot.srv[0m
+WARNING: Package name "RobotCar" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "RobotCar" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[ 55%] [34m[1mGenerating Lisp code from RobotCar/voice2robot.srv[0m
+WARNING: Package name "RobotCar" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[ 57%] [34m[1mGenerating Python msg __init__.py for RobotCar[0m
+[ 57%] Built target RobotCar_generate_messages_lisp
+[ 60%] [34m[1mGenerating Python srv __init__.py for RobotCar[0m
+[ 60%] Built target RobotCar_generate_messages_cpp
+WARNING: Package name "RobotCar" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "RobotCar" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[ 60%] Built target RobotCar_generate_messages_py
+WARNING: Package name "RobotCar" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "RobotCar" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[ 60%] Built target RobotCar_generate_messages_eus
+[35m[1mScanning dependencies of target room_scheduling[0m
+[35m[1mScanning dependencies of target send_goals_node[0m
+[35m[1mScanning dependencies of target vanjee_716mini_lidar[0m
+[35m[1mScanning dependencies of target car_odom_tf[0m
+[35m[1mScanning dependencies of target voice_test[0m
+[35m[1mScanning dependencies of target RobotCar_generate_messages[0m
+[35m[1mScanning dependencies of target car_serial[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/voice_test.dir/src/voice_test.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/send_goals_node.dir/src/send_goals_node.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/room_scheduling.dir/src/room_scheduling.cpp.o[0m
+[ 67%] Built target RobotCar_generate_messages
+[ 70%] [32mBuilding CXX object CMakeFiles/vanjee_716mini_lidar.dir/src/vanjee_716mini_node.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/car_odom_tf.dir/src/car_odom_tf.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/car_serial.dir/src/car_serial.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/vanjee_716mini_lidar.dir/src/vanjee_716mini_lidar_protocol.cpp.o[0m
+[ 80%] [32m[1mLinking CXX executable /home/agrobot/Robot_ws/devel/.private/RobotCar/lib/RobotCar/car_serial[0m
+[ 80%] Built target car_serial
+[ 82%] [32m[1mLinking CXX executable /home/agrobot/Robot_ws/devel/.private/RobotCar/lib/RobotCar/voice_test[0m
+[ 85%] [32m[1mLinking CXX executable /home/agrobot/Robot_ws/devel/.private/RobotCar/lib/RobotCar/car_odom_tf[0m
+[ 85%] Built target voice_test
+[ 85%] Built target car_odom_tf
+[ 87%] [32mBuilding CXX object CMakeFiles/vanjee_716mini_lidar.dir/src/vanjee_common_tcp.cpp.o[0m
+[ 90%] [32m[1mLinking CXX executable /home/agrobot/Robot_ws/devel/.private/RobotCar/lib/RobotCar/room_scheduling[0m
+[ 90%] Built target room_scheduling
+[ 92%] [32mBuilding CXX object CMakeFiles/vanjee_716mini_lidar.dir/src/vanjee_common_udp.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/vanjee_716mini_lidar.dir/src/vanjee_abstract_protocol.cpp.o[0m
+[ 97%] [32m[1mLinking CXX executable /home/agrobot/Robot_ws/devel/.private/RobotCar/lib/RobotCar/send_goals_node[0m
+[ 97%] Built target send_goals_node
+[100%] [32m[1mLinking CXX executable /home/agrobot/Robot_ws/devel/.private/RobotCar/lib/RobotCar/vanjee_716mini_lidar[0m
+[100%] Built target vanjee_716mini_lidar

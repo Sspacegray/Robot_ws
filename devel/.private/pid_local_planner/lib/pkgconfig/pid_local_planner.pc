@@ -1,0 +1,8 @@
+prefix=/home/agrobot/Robot_ws/devel/.private/pid_local_planner
+
+Name: pid_local_planner
+Description: Description of pid_local_planner
+Version: 0.0.0
+Cflags: -I/home/agrobot/Robot_ws/devel/.private/pid_local_planner/include -I/home/agrobot/Robot_ws/src/pid_local_planner/include
+Libs: -L${prefix}/lib -lpid_local_planner
+Requires: base_local_planner nav_core pluginlib roscpp tf tf2_ros costmap_2d nav_msgs dynamic_reconfigure angles

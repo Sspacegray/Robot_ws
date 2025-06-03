@@ -1,0 +1,3 @@
+Symlinking /home/agrobot/Robot_ws/devel/lib/pkgconfig/apriltag_detection.pc
+Symlinking /home/agrobot/Robot_ws/devel/share/apriltag_detection/cmake/apriltag_detectionConfig-version.cmake
+Symlinking /home/agrobot/Robot_ws/devel/share/apriltag_detection/cmake/apriltag_detectionConfig.cmake

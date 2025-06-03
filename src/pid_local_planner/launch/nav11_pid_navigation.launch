@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- 首先启动硬件驱动 -->
+  <include file="$(find rplidar_ros)/launch/rplidar_c1.launch" />
+  <include file="$(find RobotCar)/launch/serial_communication_pub.launch" /> 
+  
+  <!-- 启动URDF和可视化 -->
+  <include file="$(find RobotCar)/launch/urdf.launch">
+    <arg name="gui" value="false"/>
+    <arg name="start_rviz" value="false"/>
+  </include>
+
+  <!-- 设置地图的配置文件 -->
+  <param name="/use_sim_time" value="false" />
+  <param name="/localization" type="bool" value="1"/>
+  
+  <!-- 使用完整的配置文件路径 -->
+  <arg name="configuration_directory" default="$(find RobotCar)/config"/>
+  <arg name="configuration_basename" default="x_argrobot_purelocalization.lua"/>
+  
+  <!-- 分别定义Cartographer定位地图和导航地图 -->
+  <arg name="cartographer_map_file" default="$(find RobotCar)/map/maptest.pbstream"/>
+  <arg name="navigation_map_file" default="$(find RobotCar)/map/maptest.yaml"/>
+  
+  <!-- 声明初始位姿参数 -->
+  <arg name="set_inital_pose_x" default="0.025"/>
+  <arg name="set_inital_pose_y" default="0.071"/>
+  <arg name="set_inital_pose_z" default="0.0"/>
+  <arg name="set_inital_pose_ox" default="0.0"/>
+  <arg name="set_inital_pose_oy" default="0.0"/>
+  <arg name="set_inital_pose_oz" default="-0.026"/>
+  <arg name="set_inital_pose_ow" default="0.999"/>
+
+  <!-- 设置初始位姿 -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="initial_pose_publisher" 
+        args="$(arg set_inital_pose_x) $(arg set_inital_pose_y) $(arg set_inital_pose_z) 
+              $(arg set_inital_pose_ox) $(arg set_inital_pose_oy) $(arg set_inital_pose_oz) $(arg set_inital_pose_ow)
+              map odom" />
+
+  <!-- 添加base_footprint到base_link的转换 -->
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_footprint_to_base_link"
+        args="0 0 0 0 0 0 base_footprint base_link" />
+
+  <!-- 启动Cartographer纯定位节点（使用pbstream地图） -->
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory $(arg configuration_directory)
+          -configuration_basename $(arg configuration_basename)
+          -load_state_filename $(arg cartographer_map_file)"
+      output="screen">
+      <remap from="scan" to="scan"/>
+      <remap from="imu" to="wit/imu"/>
+      <param name="provide_odom_frame" value="true"/>
+  </node>
+
+  <!-- 启动cartographer轨迹可视化节点 -->
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="-resolution 0.05">
+      <!-- 为了区分与导航使用的地图，将其发布到不同的话题 -->
+      <remap from="map" to="cartographer_map"/>
+  </node>
+
+  <!-- 启动地图服务器（使用yaml地图用于导航） -->
+  <node name="map_server" pkg="map_server" type="map_server" 
+        args="$(arg navigation_map_file)" 
+        output="screen">
+      <param name="frame_id" value="map"/>
+  </node>
+  
+  <!-- 启动move_base节点，使用PID局部规划器 -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base_pid" output="screen">
+    <!-- 加载全局和局部规划器参数 -->
+    <rosparam file="$(find RobotCar)/param/costmap_common_params_waffle.yaml" command="load" ns="global_costmap"/>
+    <rosparam file="$(find RobotCar)/param/costmap_common_params_waffle.yaml" command="load" ns="local_costmap"/>
+    <rosparam file="$(find RobotCar)/param/global_costmap_params.yaml" command="load"/>
+    <rosparam file="$(find RobotCar)/param/local_costmap_params.yaml" command="load"/>
+    <rosparam file="$(find RobotCar)/param/move_base_params.yaml" command="load"/>
+    
+    <!-- 使用PID局部规划器替代DWA -->
+    <rosparam file="$(find pid_local_planner)/param/pid_local_planner_params.yaml" command="load"/>
+    <param name="base_local_planner" value="pid_local_planner/PIDLocalPlanner"/>
+    
+    <!-- 重新设置成本地图关键参数，增强避障能力 -->
+    <param name="global_costmap/inflation_layer/inflation_radius" value="0.40"/>  <!-- 增加全局膨胀半径 -->
+    <param name="local_costmap/inflation_layer/inflation_radius" value="0.45"/>   <!-- 进一步增加局部膨胀半径 -->
+    <param name="global_costmap/inflation_layer/cost_scaling_factor" value="8.0"/> <!-- 降低代价缩放因子，使障碍物影响范围更大 -->
+    <param name="local_costmap/inflation_layer/cost_scaling_factor" value="8.0"/>  <!-- 降低局部代价缩放因子 -->
+    
+    <!-- 加强障碍物层参数 -->
+    <param name="local_costmap/obstacle_layer/enabled" value="true"/>
+    <param name="local_costmap/obstacle_layer/max_obstacle_height" value="2.0"/>
+    <param name="local_costmap/obstacle_layer/min_obstacle_height" value="0.0"/>
+    <param name="local_costmap/obstacle_layer/observation_sources" value="scan"/>
+    <param name="local_costmap/obstacle_layer/scan/sensor_frame" value="laser"/>
+    <param name="local_costmap/obstacle_layer/scan/observation_persistence" value="0.0"/>  <!-- 不保留过时的障碍物观测 -->
+    <param name="local_costmap/obstacle_layer/scan/expected_update_rate" value="5.0"/>    <!-- 期望更新频率 -->
+    <param name="local_costmap/obstacle_layer/scan/data_type" value="LaserScan"/>
+    <param name="local_costmap/obstacle_layer/scan/clearing" value="true"/>
+    <param name="local_costmap/obstacle_layer/scan/marking" value="true"/>
+    <param name="local_costmap/obstacle_layer/scan/inf_is_valid" value="true"/>
+    
+    <!-- 增加成本地图大小和分辨率，以便更好地感知障碍物 -->
+    <param name="local_costmap/width" value="5.0"/>  <!-- 增加局部地图宽度 -->
+    <param name="local_costmap/height" value="5.0"/> <!-- 增加局部地图高度 -->
+    <param name="local_costmap/resolution" value="0.05"/> <!-- 保持高分辨率 -->
+    <param name="local_costmap/update_frequency" value="5.0"/> <!-- 确保足够的更新频率 -->
+    <param name="local_costmap/publish_frequency" value="5.0"/> <!-- 确保足够的发布频率 -->
+    
+    <!-- 调整局部规划器参数，解决摇摆和长廊行走问题 -->
+    <param name="PIDLocalPlanner/xy_goal_tolerance" value="0.15"/> 
+    <param name="PIDLocalPlanner/yaw_goal_tolerance" value="0.15"/>
+    <param name="PIDLocalPlanner/latch_xy_goal_tolerance" value="true"/>
+    <param name="recovery_behavior_enabled" value="true"/>
+    <param name="clearing_rotation_allowed" value="true"/>
+    
+    <!-- 重新设置move_base关键参数 -->
+    <param name="controller_frequency" value="10.0"/>
+    <param name="planner_patience" value="60.0"/>
+    <param name="controller_patience" value="30.0"/>
+    <param name="oscillation_timeout" value="30.0"/>
+    <param name="oscillation_distance" value="0.15"/>
+    <param name="conservative_reset_dist" value="3.0"/>
+    <param name="recovery_time_delta" value="10.0"/>
+    
+    <!-- 将所有相关话题重映射，以避免与标准move_base冲突 -->
+    <remap from="/move_base/goal" to="/move_base_pid/goal"/>
+    <remap from="/move_base_simple/goal" to="/move_base_pid_simple/goal"/>
+  </node>
+  
+  <!-- 启动多点导航节点 -->
+  <node pkg="RobotCar" type="send_goals_node" name="multi_point_navigation" output="screen">
+    <!-- 加载路径点参数文件 -->
+    <rosparam command="load" file="$(find RobotCar)/config/waypoints.yaml" />
+    <!-- 节点参数 -->
+    <param name="frame_id" value="map" />
+    <param name="wait_seconds" value="10.0" />
+    <param name="initialization_wait_time" value="60.0" />
+    <param name="total_loops" value="3" />
+    
+    <!-- 重映射目标话题以匹配move_base_pid -->
+    <remap from="/move_base/goal" to="/move_base_pid/goal"/>
+  </node>
+
+  <!-- 运行轨迹可视化节点 -->
+  <node name="trajectory_visualizer_node" pkg="RobotCar"
+        type="rviz_visual" output="screen">
+      <remap from="/tracked_pose" to="/robot_pose"/>
+  </node>
+
+  <!-- 启动RViz可视化 -->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find pid_local_planner)/cfg/demo_2d.rviz" />
+</launch> 

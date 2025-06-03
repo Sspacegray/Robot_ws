@@ -1,0 +1,96 @@
+<!--
+  Copyright 2016 The Cartographer Authors
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<launch>
+  <!-- 参数定义 -->
+<!-- <include file="$(find oradar_ros)/launch/ms500_scan_view.launch" /> -->
+<include file="$(find RobotCar)/launch/vanjee_716mini_lidar_01.launch" />
+<!-- <include file="$(find rplidar_ros)/launch/rplidar_c1.launch" /> -->
+<!-- <include file="$(find xf_mic_asr_offline)/launch/mic_init.launch" /> -->
+<include file="$(find RobotCar)/launch/serial_communication_pub.launch" /> 
+  <!-- <include file="$(find RobotCar)/launch/camera.launch" /> -->
+<include file="$(find RobotCar)/launch/laser_tf.launch" />
+
+<!-- 启动URDF和可视化 -->
+<include file="$(find RobotCar)/launch/urdf.launch">
+    <arg name="gui" value="true"/>
+    <arg name="start_rviz" value="false"/>
+</include>
+<param name="/localization" type="bool" value = "0"/>   <!-- 0为建图，1为定位 -->
+  <param name="/use_sim_time" value="false" /> 
+  <!-- <arg name="start_rviz" default="false"/> -->
+  <arg name="start_rviz" default="true"/>
+
+  <!-- bag的地址与名称 -->
+  <!-- <arg name="bag_filename" default="/home/vensin/bagfiles/all_topics_2025-02-11-17-31-06.bag"/> -->
+
+  <!-- 使用bag的时间戳 -->
+  <!-- <param name="/use_sim_time" value="false" />  -->
+
+  <!-- 使用 EKF 进行融合定位 -->
+  <!-- <include file="$(find RobotCar)/launch/nav09_ekf_localization.launch" /> -->
+
+  <!-- 等待 EKF 节点启动
+  <arg name="ekf_timeout" default="2.0"/>
+  <node pkg="topic_tools" type="relay" name="wait_for_ekf"
+        args="/odom /odom_relay" launch-prefix="bash -c 'sleep $(arg ekf_timeout); $0 $@'" /> -->
+
+  <!-- 添加时间重置节点 -->
+  <node pkg="topic_tools" type="relay" name="reset_time_relay"
+        args="/reset_time /reset_time_out" />
+  
+  <!-- 添加时间同步管理器 -->
+  <node pkg="tf" type="tf_remap" name="tf_remapper">
+      <param name="old_tf_prefix" value="" />
+      <param name="tf_prefix" value="" />
+      <param name="reset_on_time_jump" value="true" />
+  </node>
+
+  <!-- 启动cartographer -->
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory $(find RobotCar)/config
+          -configuration_basename x_argrobot.lua"
+      output="screen">
+    <!-- 根据x_argrobot.lua配置进行话题重映射 -->
+    <remap from="scan" to="scan" />  <!-- 激光雷达数据 -->
+    <!-- <remap from="odom" to="odom" />   -->
+    <remap from="imu" to="wit/imu" />  <!-- IMU数据 -->
+    <remap from="points2" to="particlecloud" />
+    
+    <!-- 让Cartographer负责发布TF -->
+    <param name="publish_frame_projected_to_2d" value="true" />
+    <param name="publish_tracked_pose" value="true" />
+    <param name="publish_to_tf" value="true" />
+    <param name="publish_to_tf_static" value="false" />
+    
+    <!-- 增加TF缓冲区时间 -->
+    <param name="tf_buffer_length" value="30.0" />
+  </node>
+
+  <!-- 生成ros格式的地图 -->
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="-resolution 0.03" />
+
+  <!-- 启动rviz -->
+  <node if="$(arg start_rviz)" name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find RobotCar)/config/demo_2d.rviz">
+
+    <!-- <env name="DISPLAY" value=":0"/>
+    <env name="QT_X11_NO_MITSHM" value="1"/> -->
+  </node>
+
+</launch>

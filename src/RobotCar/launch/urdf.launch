@@ -1,0 +1,21 @@
+<launch>
+
+    <!-- 设置参数 -->
+    <param name="robot_description" textfile="$(find RobotCar)/urdf/my_robot.urdf" />
+
+    <!-- 添加参数 -->
+    <arg name="gui" default="true"/>
+    <arg name="start_rviz" default="false"/>
+    <arg name="rviz_config" default="$(find RobotCar)/config/demo_2d.rviz"/>
+
+    <node pkg="joint_state_publisher" name="joint_state_publisher" type="joint_state_publisher">
+        <param name="use_gui" value="$(arg gui)"/>
+    </node>
+    <node pkg="robot_state_publisher" name="robot_state_publisher" type="robot_state_publisher" />
+
+    <!-- 启动RViz -->
+    <node if="$(arg start_rviz)" pkg="rviz" type="rviz" name="urdf_rviz" 
+          args="-d $(arg rviz_config)" required="true">
+    </node>
+
+</launch>

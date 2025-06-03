@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- 将PID局部规划器作为本地规划器使用 -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <!-- 加载全局和局部规划器参数 -->
+    <rosparam file="$(find RobotCar)/param/costmap_common_params_waffle.yaml" command="load" ns="global_costmap"/>
+    <rosparam file="$(find RobotCar)/param/costmap_common_params_waffle.yaml" command="load" ns="local_costmap"/>
+    <rosparam file="$(find RobotCar)/param/global_costmap_params.yaml" command="load"/>
+    <rosparam file="$(find RobotCar)/param/local_costmap_params.yaml" command="load"/>
+    <rosparam file="$(find RobotCar)/param/move_base_params.yaml" command="load"/>
+    
+    <!-- 使用PID局部规划器替代DWA -->
+    <rosparam file="$(find pid_local_planner)/param/pid_local_planner_params.yaml" command="load"/>
+    <param name="base_local_planner" value="pid_local_planner/PIDLocalPlanner"/>
+    
+    <!-- 重新设置部分关键参数 -->
+    <param name="controller_frequency" value="10.0"/>
+    <param name="planner_patience" value="5.0"/>
+    <param name="controller_patience" value="15.0"/>
+    <param name="oscillation_timeout" value="10.0"/>
+    <param name="oscillation_distance" value="0.15"/>
+  </node>
+</launch>

@@ -1,0 +1,10 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~min_ang" : \b [double] The angle of the first range measurement [rad]. min: -3.141592654, default: -3.141592654, max: 3.141592654
+- \b "~max_ang" : \b [double] The angle of the last range measurement [rad]. min: -3.141592654, default: 3.141592654, max: 3.141592654
+- \b "~range_min" : \b [double] The range_min[m]. min: 0.0, default: 0.0, max: 30.0
+- \b "~range_max" : \b [double] The range_max[m]. min: 0.0, default: 30.0, max: 30.0
+- \b "~frame_id" : \b [str] The TF frame in which laser scans will be returned. min: , default: laser, max: 
+

@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/roseus/ros/xf_mic_asr_offline/srv/Get_Major_Mic_srv.l

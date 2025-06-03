@@ -1,0 +1,37 @@
+<launch>
+    <!-- 设置地图的配置文件 -->
+    <arg name="map_file" default="$(find RobotCar)/map/my_map.pbstream"/>
+    
+    <!-- 使用完整的配置文件路径 -->
+    <arg name="configuration_directory" 
+         default="$(find cartographer_ros)/configuration_files"/>
+
+    <!-- 启动Cartographer纯定位节点 -->
+    <node name="cartographer_node" pkg="cartographer_ros"
+        type="cartographer_node" args="
+            -configuration_directory $(arg configuration_directory)
+            -configuration_basename x_argrobot_purelocalization.lua
+            -load_state_filename $(arg map_file)"
+        output="screen">
+        <remap from="points2" to="particlecloud" /> 
+        <remap from="scan" to="scan"/>
+        <remap from="imu" to="wit/imu"/>
+        <remap from="odom" to="odom"/>
+    </node>
+
+    <!-- 添加静态TF转换 -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_laser"
+        args="0 0 0 0 0 0 base_footprint laser" />
+
+    <!-- 启动cartographer轨迹可视化节点 -->
+    <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+        type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+
+    <!-- 等待5秒后启动move_base -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="wait_for_cartographer"
+        args="0 0 0 0 0 0 map odom" launch-prefix="bash -c 'sleep 5; $0 $@'" />
+
+    <!-- 运行move_base节点 -->
+    <include file="$(find RobotCar)/launch/nav05_path.launch" />
+
+</launch>

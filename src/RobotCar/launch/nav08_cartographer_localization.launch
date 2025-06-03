@@ -1,0 +1,54 @@
+<launch>
+    <param name="/localization" type="bool" value = "1"/>
+
+    <!-- 设置地图的配置文件 -->
+    <param name="/use_sim_time" value="false" />
+    
+    <!-- 使用完整的配置文件路径 -->
+    <arg name="configuration_directory" default="$(find RobotCar)/config"/>
+    <arg name="configuration_basename" default="x_argrobot_purelocalization.lua"/>
+    
+    <!-- 分别定义Cartographer定位地图和导航地图 -->
+    <arg name="cartographer_map_file" default="$(find RobotCar)/map/0515.pbstream"/>
+    <arg name="navigation_map_file" default="$(find RobotCar)/map/0515.yaml"/>
+
+    <!-- 启动Cartographer纯定位节点（使用pbstream地图） -->
+    <node name="cartographer_node" pkg="cartographer_ros"
+        type="cartographer_node" args="
+            -configuration_directory $(arg configuration_directory)
+            -configuration_basename $(arg configuration_basename)
+            -load_state_filename $(arg cartographer_map_file)"
+        output="screen">
+        <remap from="scan" to="scan"/>
+        <remap from="imu" to="wit/imu"/>
+        <param name="provide_odom_frame" value="true"/>
+    </node>
+
+    <!-- 启动cartographer轨迹可视化节点 -->
+    <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+        type="cartographer_occupancy_grid_node" args="-resolution 0.05">
+        <!-- 为了区分与导航使用的地图，将其发布到不同的话题 -->
+        <remap from="map" to="cartographer_map"/>
+    </node>
+
+    <!-- 启动地图服务器（使用yaml地图用于导航） -->
+    <node name="map_server" pkg="map_server" type="map_server" 
+          args="$(arg navigation_map_file)" 
+          output="screen">
+        <param name="frame_id" value="map"/>
+    </node>
+
+    <!-- 运行move_base节点 -->
+    <include file="$(find RobotCar)/launch/nav05_path.launch" />
+    
+    <!-- 运行轨迹可视化节点 -->
+    <!-- <node name="trajectory_visualizer_node" pkg="RobotCar"
+          type="rviz_visual" output="screen">
+        <remap from="/tracked_pose" to="/robot_pose"/>
+    </node> -->
+
+    <!-- 运行rviz进行可视化 -->
+    <node pkg="rviz" type="rviz" name="rviz" 
+          args="-d $(find RobotCar)/config/demo_2d.rviz" respawn="true"/>
+
+</launch> 

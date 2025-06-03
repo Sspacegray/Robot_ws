@@ -1,0 +1,4 @@
+apriltag_detection
+/home/agrobot/Robot_ws/devel/.private/apriltag_detection/lib/pkgconfig/apriltag_detection.pc /home/agrobot/Robot_ws/devel/lib/pkgconfig/apriltag_detection.pc
+/home/agrobot/Robot_ws/devel/.private/apriltag_detection/share/apriltag_detection/cmake/apriltag_detectionConfig-version.cmake /home/agrobot/Robot_ws/devel/share/apriltag_detection/cmake/apriltag_detectionConfig-version.cmake
+/home/agrobot/Robot_ws/devel/.private/apriltag_detection/share/apriltag_detection/cmake/apriltag_detectionConfig.cmake /home/agrobot/Robot_ws/devel/share/apriltag_detection/cmake/apriltag_detectionConfig.cmake

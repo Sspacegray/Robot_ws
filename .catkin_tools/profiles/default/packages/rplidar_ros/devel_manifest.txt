@@ -1,0 +1,6 @@
+rplidar_ros
+/home/agrobot/Robot_ws/devel/.private/rplidar_ros/lib/rplidar_ros/rplidarNode /home/agrobot/Robot_ws/devel/lib/rplidar_ros/rplidarNode
+/home/agrobot/Robot_ws/devel/.private/rplidar_ros/lib/rplidar_ros/rplidarNodeClient /home/agrobot/Robot_ws/devel/lib/rplidar_ros/rplidarNodeClient
+/home/agrobot/Robot_ws/devel/.private/rplidar_ros/lib/pkgconfig/rplidar_ros.pc /home/agrobot/Robot_ws/devel/lib/pkgconfig/rplidar_ros.pc
+/home/agrobot/Robot_ws/devel/.private/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake /home/agrobot/Robot_ws/devel/share/rplidar_ros/cmake/rplidar_rosConfig.cmake
+/home/agrobot/Robot_ws/devel/.private/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake /home/agrobot/Robot_ws/devel/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake

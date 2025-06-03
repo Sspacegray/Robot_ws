@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/RobotCar/lib/python3/dist-packages/RobotCar/msg/_robotinfo.py

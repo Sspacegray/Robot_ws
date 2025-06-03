@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/common-lisp/ros/xf_mic_asr_offline/srv/_package_Start_Record_srv.lisp

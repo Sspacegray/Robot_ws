@@ -1,0 +1,17 @@
+=============================================================
+[36m--[0m ROS Found. ROS Support is turned On!
+=============================================================
+=============================================================
+[36m--[0m ROS2 Not Found. Ros2 Support is turned Off!
+=============================================================
+[33m[1mCMake Warning[0m at /home/agrobot/Robot_ws/build/oradar_ros/cmake/oradar_ros-genmsg.cmake:3 (message):
+  Invoking generate_messages() without having added any message or service
+  file before.
+
+  You should either add add_message_files() and/or add_service_files() calls
+  or remove the invocation of generate_messages().
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake:307 (include)
+  CMakeLists.txt:66 (generate_messages)
+
+

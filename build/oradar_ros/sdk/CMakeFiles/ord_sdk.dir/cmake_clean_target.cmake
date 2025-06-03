@@ -1,0 +1,3 @@
+file(REMOVE_RECURSE
+  "/home/agrobot/Robot_ws/devel/.private/oradar_ros/lib/ord_sdk.a"
+)

@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/share/roseus/ros/oradar_ros/manifest.l

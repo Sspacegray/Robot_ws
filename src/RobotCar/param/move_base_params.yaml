@@ -1,0 +1,43 @@
+global_frame: map
+robot_base_frame: base_footprint
+use_dijkstra: false 
+use_quadratic: true
+shutdown_costmaps: false
+use_astar: false
+use_grid_path: false
+
+controller_frequency: 10.0  # 保持控制频率
+planner_patience: 5.0  # 保持规划耐心
+controller_patience: 10.0  # 保持控制耐心
+conservative_reset_dist: 1.0
+planner_frequency: 1.0  # 保持规划频率
+oscillation_timeout: 10.0
+oscillation_distance: 0.05
+  
+# 路径平滑度和安全性
+lethal_cost: 230  # 进一步降低致命代价，使路径更平滑
+neutral_cost: 55  # 略微提高中性代价，增加安全边界
+cost_factor: 0.25  # 降低代价因子，使路径更平滑
+publish_potential: true
+orientation_mode: 1
+orientation_window_size: 10
+
+recovery_behavior_enabled: true
+clearing_rotation_allowed: true
+recovery_behaviors:
+  - name: 'conservative_reset'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
+  - name: 'rotate_recovery'
+    type: 'rotate_recovery/RotateRecovery'
+  - name: 'aggressive_reset'
+    type: 'clear_costmap_recovery/ClearCostmapRecovery'
+    
+conservative_reset:
+  reset_distance: 1.0
+
+rotate_recovery:
+  sim_granularity: 0.05
+  frequency: 20.0
+
+aggressive_reset:
+  reset_distance: 0.5

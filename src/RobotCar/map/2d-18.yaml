@@ -1,0 +1,6 @@
+image: /home/vensin/Desktop/Robot_ws/src/RobotCar/map/2d-18.pgm
+resolution: 0.05
+origin: [-7.37417, -15.7408, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196

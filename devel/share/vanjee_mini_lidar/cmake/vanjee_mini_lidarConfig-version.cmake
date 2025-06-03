@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/share/vanjee_mini_lidar/cmake/vanjee_mini_lidarConfig-version.cmake

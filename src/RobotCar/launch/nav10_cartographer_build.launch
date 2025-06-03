@@ -1,0 +1,70 @@
+<!--
+  Copyright 2016 The Cartographer Authors
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<launch>
+  <!-- bag的地址与名称 -->
+  <arg name="bag_filename" default="/home/agrobot/landmarks_demo_uncalibrated.bag"/>
+
+  <!-- 使用bag的时间戳 -->
+  <param name="/use_sim_time" value="true" /> 
+
+  <!-- 使用 EKF 进行融合定位 -->
+  <!-- <include file="$(find RobotCar)/launch/nav09_ekf_localization.launch" /> -->
+
+  <!-- 等待 EKF 节点启动 -->
+  <!-- <arg name="ekf_timeout" default="2.0"/>
+  <node pkg="topic_tools" type="relay" name="wait_for_ekf"
+        args="/odom /odom_relay" launch-prefix="bash -c 'sleep $(arg ekf_timeout); $0 $@'" /> -->
+
+  <!-- 启动cartographer -->
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory $(find RobotCar)/config
+          -configuration_basename x_argrobot.lua"
+      output="screen">
+    <!-- 根据x_argrobot.lua配置进行话题重映射 -->
+    <remap from="scan" to="scan" />  <!-- 激光雷达数据 -->
+    <remap from="odom" to="odometry/filtered" />  <!-- 使用 EKF 滤波后的里程计 -->
+    <remap from="imu" to="wit/imu" />  <!-- IMU数据 -->
+    <remap from="points2" to="particlecloud" />
+    
+    <!-- 禁用Cartographer发布某些TF，避免与EKF冲突 -->
+    <param name="publish_frame_projected_to_2d" value="false" />
+    <param name="publish_tracked_pose" value="false" />
+    <param name="publish_to_tf" value="true" />
+    <param name="publish_to_tf_static" value="false" />
+    
+    <!-- 设置TF前缀，避免冲突 -->
+    <param name="tf_prefix" value="cartographer" />
+  </node>
+
+  <!-- 添加TF树管理节点，解决TF冲突 -->
+  <node pkg="tf" type="static_transform_publisher" name="map_to_odom_publisher" 
+        args="0 0 0 0 0 0 map odom 100" />
+
+  <!-- 生成ros格式的地图 -->
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+
+  <!-- 启动rviz -->
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find RobotCar)/config/demo_2d.rviz" />
+
+  <!-- 启动rosbag -->
+  <node name="playbag" pkg="rosbag" type="play"
+      args="--clock $(arg bag_filename)" />
+
+</launch>

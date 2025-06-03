@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/RobotCar/share/common-lisp/ros/RobotCar/msg/_package_robotinfo.lisp

@@ -1,0 +1,7 @@
+<launch>
+    <node pkg = "RobotCar" type ="car_odom_tf" name ="car_odom_tf" output = "screen" />
+    <node pkg = "RobotCar" type ="car_serial" name ="car_serial" output = "screen" />
+    <node pkg = "RobotCar" type ="wit_normal_ros.py" name ="wit_normal_ros" output = "screen" />
+    <!-- <node pkg = "RobotCar" type ="voice_test" name ="voice_test" output = "screen"/> -->
+    <!-- <node pkg = "RobotCar" type ="room_scheduling" name ="room_scheduling" output = "screen"/>  -->
+</launch>

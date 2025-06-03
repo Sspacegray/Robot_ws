@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/apriltag_detection/lib/pkgconfig/apriltag_detection.pc

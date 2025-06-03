@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/lib/pkgconfig/vanjee_mini_lidar.pc

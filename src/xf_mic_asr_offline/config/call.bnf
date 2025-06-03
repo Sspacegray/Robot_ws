@@ -1,0 +1,17 @@
+﻿﻿#BNF+IAT 1.0 UTF-8;
+
+// 定义语法名称为call
+!grammar call;
+
+// 声明action词槽
+!slot <action>;
+
+// 定义开始规则，同时声明action词槽
+!start <callstart>;
+
+// 词槽定义
+<callstart>:[小车|小农|小达|机器人]<choose>;
+<choose>:<action>|<navigation>|<confirm>;
+<action>:回去|去充电|充电|休眠;
+<navigation>:(去|来|前往|去到)房间(一|二|三|四|五|六|七|八|九|十|十一|充电位)[这儿|那里];
+<confirm>:是的|确认|不是|错了|不对|ok|没错|对;

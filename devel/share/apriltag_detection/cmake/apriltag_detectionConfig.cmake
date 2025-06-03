@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/apriltag_detection/share/apriltag_detection/cmake/apriltag_detectionConfig.cmake

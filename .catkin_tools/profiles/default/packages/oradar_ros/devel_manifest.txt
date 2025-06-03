@@ -1,0 +1,12 @@
+oradar_ros
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/lib/ord_sdk.a /home/agrobot/Robot_ws/devel/lib/ord_sdk.a
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/lib/pkgconfig/oradar_ros.pc /home/agrobot/Robot_ws/devel/lib/pkgconfig/oradar_ros.pc
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/lib/python3/dist-packages/oradar_ros/__init__.py /home/agrobot/Robot_ws/devel/lib/python3/dist-packages/oradar_ros/__init__.py
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/lib/oradar_ros/oradar_pointcloud /home/agrobot/Robot_ws/devel/lib/oradar_ros/oradar_pointcloud
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/lib/oradar_ros/scan_frame_test /home/agrobot/Robot_ws/devel/lib/oradar_ros/scan_frame_test
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/lib/oradar_ros/oradar_scan /home/agrobot/Robot_ws/devel/lib/oradar_ros/oradar_scan
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/share/roseus/ros/oradar_ros/manifest.l /home/agrobot/Robot_ws/devel/share/roseus/ros/oradar_ros/manifest.l
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/share/oradar_ros/cmake/oradar_ros-msg-paths.cmake /home/agrobot/Robot_ws/devel/share/oradar_ros/cmake/oradar_ros-msg-paths.cmake
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/share/oradar_ros/cmake/oradar_ros-msg-extras.cmake /home/agrobot/Robot_ws/devel/share/oradar_ros/cmake/oradar_ros-msg-extras.cmake
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/share/oradar_ros/cmake/oradar_rosConfig-version.cmake /home/agrobot/Robot_ws/devel/share/oradar_ros/cmake/oradar_rosConfig-version.cmake
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/share/oradar_ros/cmake/oradar_rosConfig.cmake /home/agrobot/Robot_ws/devel/share/oradar_ros/cmake/oradar_rosConfig.cmake

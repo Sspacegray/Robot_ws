@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/oradar_ros/share/oradar_ros/cmake/oradar_rosConfig-version.cmake

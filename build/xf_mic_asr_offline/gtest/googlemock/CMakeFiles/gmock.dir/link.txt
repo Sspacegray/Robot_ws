@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -g   -shared -Wl,-soname,libgmock.so -o ../lib/libgmock.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/agrobot/Robot_ws/build/xf_mic_asr_offline/gtest/lib ../lib/libgtest.so -lpthread 

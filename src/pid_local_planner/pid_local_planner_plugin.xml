@@ -1,0 +1,7 @@
+<library path="lib/libpid_local_planner">
+  <class name="pid_local_planner/PIDLocalPlanner" type="pid_local_planner::PIDLocalPlanner" base_class_type="nav_core::BaseLocalPlanner">
+    <description>
+      基于PID控制的简单局部规划器，专注于直线行驶和原地旋转，适用于工厂巡检导航。
+    </description>
+  </class>
+</library>

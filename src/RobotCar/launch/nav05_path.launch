@@ -1,0 +1,88 @@
+<!-- <launch>
+
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
+        <rosparam file="$(find RobotCar)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+        <rosparam file="$(find RobotCar)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+        <rosparam file="$(find RobotCar)/param/local_costmap_params.yaml" command="load" />
+        <rosparam file="$(find RobotCar)/param/global_costmap_params.yaml" command="load" />
+        <rosparam file="$(find RobotCar)/param/base_local_planner_params.yaml" command="load" />   
+    </node>
+
+</launch> -->
+
+
+<launch>
+  <!-- Arguments -->
+  <!-- <arg name="model" default="$(env TURTLEBOT3_MODEL)" doc="model type [burger, waffle, waffle_pi]"/>
+  <arg name="cmd_vel_topic" default="/cmd_vel" />
+  <arg name="odom_topic" default="odom" /> -->
+  <!-- <arg name="move_forward_only" default="true"/>  -->
+
+  <!-- move_base -->
+  <!-- 删除重复的map_server启动，因为nav08_cartographer_localization.launch中已经包含了 -->
+  <!-- <include file="$(find RobotCar)/launch/nav03_map_server.launch" /> -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+    
+    <!-- 确保costmap参数使用正确的坐标系 -->
+    <param name="global_costmap/global_frame" value="map"/>
+    <param name="global_costmap/robot_base_frame" value="base_footprint"/>
+    <param name="local_costmap/global_frame" value="odom"/>
+    <param name="local_costmap/robot_base_frame" value="base_footprint"/>
+    
+    <!-- 添加以下参数以使用 Cartographer 提供的地图 -->
+    <param name="global_costmap/map_topic" value="/map"/>
+    <param name="local_costmap/map_topic" value="/map"/>
+
+    <!-- 足迹模型类型 -->
+    <param name="footprint_type" value="polygon" />   
+    <rosparam param="footprint">
+      [[-0.375, 0.3], [0.375, 0.3], [0.375, -0.3], [-0.375, -0.3]]
+    </rosparam>
+    
+    <!-- 直接定义全局代价地图插件 -->
+    <rosparam param="global_costmap/plugins">
+      - {name: static_layer, type: "costmap_2d::StaticLayer"}
+      - {name: obstacle_layer, type: "costmap_2d::ObstacleLayer"}
+      - {name: inflation_layer, type: "costmap_2d::InflationLayer"}
+    </rosparam> 
+    
+    <!-- 全局代价地图静态层参数 -->
+    <param name="global_costmap/static_layer/enabled" value="true"/>
+    <param name="global_costmap/static_layer/map_topic" value="/map"/>
+    
+    <!-- 全局代价地图障碍层参数 -->
+    <param name="global_costmap/obstacle_layer/enabled" value="true"/>
+    <param name="global_costmap/obstacle_layer/observation_sources" value="scan"/>
+    <param name="global_costmap/obstacle_layer/scan/sensor_frame" value="laser"/>
+    <param name="global_costmap/obstacle_layer/scan/data_type" value="LaserScan"/>
+    <param name="global_costmap/obstacle_layer/scan/topic" value="scan"/>
+    <param name="global_costmap/obstacle_layer/scan/marking" value="true"/>
+    <param name="global_costmap/obstacle_layer/scan/clearing" value="true"/>
+    <param name="global_costmap/obstacle_layer/scan/inf_is_valid" value="true"/>
+    
+    <!-- 全局代价地图膨胀层参数 -->
+    <param name="global_costmap/inflation_layer/enabled" value="true"/>
+    <param name="global_costmap/inflation_layer/cost_scaling_factor" value="1.0"/>
+    <param name="global_costmap/inflation_layer/inflation_radius" value="1.0"/>
+    
+    <!-- 全局代价地图基本参数 -->
+    <param name="global_costmap/update_frequency" value="5.0"/>
+    <param name="global_costmap/publish_frequency" value="5.0"/>
+    <param name="global_costmap/transform_tolerance" value="0.5"/>
+    <param name="global_costmap/static_map" value="true"/>
+    <param name="global_costmap/rolling_window" value="false"/>
+    <param name="global_costmap/track_unknown_space" value="true"/>
+    <param name="global_costmap/always_send_full_costmap" value="true"/>
+    
+    <!-- 加载其他参数 -->
+    <rosparam file="$(find RobotCar)/param/costmap_common_params_waffle.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find RobotCar)/param/costmap_common_params_waffle.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find RobotCar)/param/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find RobotCar)/param/move_base_params.yaml" command="load" />
+    <rosparam file="$(find RobotCar)/param/dwa_local_planner_params_waffle.yaml" command="load" />
+    <!-- <remap from="cmd_vel" to="$(arg cmd_vel_topic)"/>
+    <remap from="odom" to="$(arg odom_topic)"/> -->
+    <!-- <param name="DWAPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />  -->
+  </node>
+</launch>

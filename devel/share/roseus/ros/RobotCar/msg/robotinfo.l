@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/RobotCar/share/roseus/ros/RobotCar/msg/robotinfo.l

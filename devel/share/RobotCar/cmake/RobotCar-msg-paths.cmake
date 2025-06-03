@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/RobotCar/share/RobotCar/cmake/RobotCar-msg-paths.cmake

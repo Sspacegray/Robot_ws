@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- 首先启动硬件驱动 -->
+  <include file="$(find rplidar_ros)/launch/rplidar_c1.launch" />
+  <include file="$(find RobotCar)/launch/serial_communication_pub.launch" /> 
+  
+  <!-- 启动URDF和可视化 -->
+  <include file="$(find RobotCar)/launch/urdf.launch">
+    <arg name="gui" value="false"/>
+    <arg name="start_rviz" value="false"/>
+  </include>
+
+  <!-- 启动Cartographer纯定位 -->
+  <include file="$(find RobotCar)/launch/nav08_cartographer_localization.launch">
+    <arg name="cartographer_map_file" value="$(find RobotCar)/map/maptest.pbstream"/>
+    <arg name="navigation_map_file" value="$(find RobotCar)/map/maptest.yaml"/>
+    <arg name="set_inital_pose_x" value="0.025"/>
+    <arg name="set_inital_pose_y" value="0.071"/>
+    <arg name="set_inital_pose_z" value="0.0"/>
+    <arg name="set_inital_pose_ox" value="0.0"/>
+    <arg name="set_inital_pose_oy" value="0.0"/>
+    <arg name="set_inital_pose_oz" value="-0.026"/>
+    <arg name="set_inital_pose_ow" value="0.999"/>
+  </include>
+  
+  <!-- 启动move_base节点，使用PID局部规划器 -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <!-- 加载全局和局部规划器参数 -->
+    <rosparam file="$(find RobotCar)/param/costmap_common_params_waffle.yaml" command="load" ns="global_costmap"/>
+    <rosparam file="$(find RobotCar)/param/costmap_common_params_waffle.yaml" command="load" ns="local_costmap"/>
+    <rosparam file="$(find RobotCar)/param/global_costmap_params.yaml" command="load"/>
+    <rosparam file="$(find RobotCar)/param/local_costmap_params.yaml" command="load"/>
+    <rosparam file="$(find RobotCar)/param/move_base_params.yaml" command="load"/>
+    
+    <!-- 使用PID局部规划器替代DWA -->
+    <rosparam file="$(find pid_local_planner)/param/pid_local_planner_params.yaml" command="load"/>
+    <param name="base_local_planner" value="pid_local_planner/PIDLocalPlanner"/>
+    
+    <!-- 重新设置成本地图关键参数，减小膨胀半径以便更好地通过门口 -->
+    <param name="global_costmap/inflation_layer/inflation_radius" value="0.30"/>
+    <param name="local_costmap/inflation_layer/inflation_radius" value="0.30"/>
+    <param name="global_costmap/inflation_layer/cost_scaling_factor" value="10.0"/>
+    <param name="local_costmap/inflation_layer/cost_scaling_factor" value="10.0"/>
+    
+    <!-- 重新设置move_base关键参数 -->
+    <param name="controller_frequency" value="10.0"/>
+    <param name="planner_patience" value="5.0"/>
+    <param name="controller_patience" value="15.0"/>
+    <param name="oscillation_timeout" value="10.0"/>
+    <param name="oscillation_distance" value="0.15"/>
+  </node>
+  
+  <!-- 启动多点导航节点 -->
+  <node pkg="RobotCar" type="send_goals_node" name="multi_point_navigation" output="screen">
+    <!-- 加载路径点参数文件 -->
+    <rosparam command="load" file="$(find RobotCar)/config/waypoints.yaml" />
+    <!-- 节点参数 -->
+    <param name="frame_id" value="map" />
+    <param name="wait_seconds" value="10.0" />
+    <param name="total_loops" value="3" /> <!-- 设置循环3次 -->
+  </node>
+
+  <!-- 启动RViz可视化 -->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find RobotCar)/rviz/demo_2d.rviz" />
+</launch>

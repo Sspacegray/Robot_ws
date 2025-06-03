@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/RobotCar/share/gennodejs/ros/RobotCar/msg/_index.js

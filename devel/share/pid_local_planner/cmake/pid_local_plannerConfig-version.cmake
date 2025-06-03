@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/pid_local_planner/share/pid_local_planner/cmake/pid_local_plannerConfig-version.cmake

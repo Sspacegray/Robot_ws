@@ -1,0 +1,42 @@
+PIDLocalPlanner:
+  # PID控制器参数 - 解决摇摆问题
+  linear_kp: 1.2  # 降低线性增益，使机器人对障碍物更敏感
+  linear_ki: 0.05  # 减少积分项，防止积累太多动量冲过障碍物
+  linear_kd: 0.3  # 增加微分项，提高对障碍物的响应速度
+  angular_kp: 2.0  # 保持角度比例系数
+  angular_ki: 0.05  # 保持积分项
+  angular_kd: 0.4  # 增加微分项，提高转向响应
+  
+  # 速度限制 - 达到0.3m/s并保证避障
+  max_vel_x: 0.25  # 略微降低最大速度，增加安全性
+  min_vel_x: 0.05  # 保持最小速度设置
+  max_vel_theta: 0.8  # 保持最大角速度
+  min_vel_theta: -0.8  # 保持最小角速度
+  min_in_place_vel_theta: 0.5  # 保持原地旋转速度
+  acc_lim_x: 0.4  # 进一步降低加速度限制，使机器人加速更平滑
+  acc_lim_theta: 1.0  # 保持角加速度限制
+  
+  # 目标容忍度 - 解决摇摆问题
+  xy_goal_tolerance: 0.15  # 调整位置容忍度到10cm
+  yaw_goal_tolerance: 0.15  # 调整角度容忍度，使其与位置容忍度一致
+  latch_xy_goal_tolerance: true  # 保持锁定位置容忍度
+  
+  # 行为控制参数 - 增强避障能力
+  lookahead_distance: 0.7  # 稍微减小前视距离，更注重近期路径
+  rotation_threshold: 0.5  # 稍微降低旋转阈值，使机器人更容易转向避障
+  slowdown_distance: 0.6  # 保持减速距离
+  obstacle_check_distance: 0.8  # 大幅增加障碍物检查距离，提前检测障碍物
+  obstacle_avoidance_weight: 50.0  # 添加高权重的障碍物回避参数
+  path_distance_bias: 30.0  # 略微降低路径距离偏置，平衡避障和路径跟随
+  goal_distance_bias: 20.0  # 降低目标距离偏置，减少直冲目标的行为
+  occdist_scale: 0.1  # 添加障碍物距离比例因子，增强避障敏感度
+  
+  # 机器人特性
+  holonomic_robot: false
+  
+  # 避障专用参数
+  use_dwa: false  # 不使用DWA采样，专注于PID控制
+  heading_lookahead: 0.4  # 前向看距离，用于计算目标朝向
+  heading_scoring: true  # 启用朝向评分
+  heading_scoring_timestep: 0.5  # 朝向评分时间步长
+  simple_attractor: false  # 不使用简单吸引子

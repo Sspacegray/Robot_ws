@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/setup.sh

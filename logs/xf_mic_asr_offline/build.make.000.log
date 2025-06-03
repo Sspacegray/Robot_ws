@@ -1,0 +1,343 @@
+/usr/bin/cmake -S/home/agrobot/Robot_ws/src/xf_mic_asr_offline -B/home/agrobot/Robot_ws/build/xf_mic_asr_offline --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/progress.marks
+/usr/bin/make -f CMakeFiles/Makefile2 all
+make[1]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Major_Mic_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Major_Mic_srv.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Major_Mic_srv.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target _xf_mic_asr_offline_generate_messages_check_deps_Set_Major_Mic_srv[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Major_Mic_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Major_Mic_srv.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Major_Mic_srv.srv 
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  0%] Built target _xf_mic_asr_offline_generate_messages_check_deps_Set_Major_Mic_srv
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Awake_Angle_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Awake_Angle_srv.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Awake_Angle_srv.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target _xf_mic_asr_offline_generate_messages_check_deps_Get_Awake_Angle_srv[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Awake_Angle_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Awake_Angle_srv.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Awake_Angle_srv.srv 
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Start_Record_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Start_Record_srv.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Start_Record_srv.dir/DependInfo.cmake --color=
+[  0%] Built target _xf_mic_asr_offline_generate_messages_check_deps_Get_Awake_Angle_srv
+/usr/bin/make -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target _xf_mic_asr_offline_generate_messages_check_deps_Start_Record_srv[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Start_Record_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Start_Record_srv.dir/build
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Start_Record_srv.srv 
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+make[2]: 对“CMakeFiles/std_msgs_generate_messages_cpp.dir/build”无需做任何事。
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  0%] Built target std_msgs_generate_messages_cpp
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  0%] Built target _xf_mic_asr_offline_generate_messages_check_deps_Start_Record_srv
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Pcm_Msg.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Pcm_Msg.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Pcm_Msg.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target _xf_mic_asr_offline_generate_messages_check_deps_Pcm_Msg[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Pcm_Msg.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Pcm_Msg.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg/Pcm_Msg.msg 
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  0%] Built target _xf_mic_asr_offline_generate_messages_check_deps_Pcm_Msg
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Led_On_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Led_On_srv.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Led_On_srv.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target _xf_mic_asr_offline_generate_messages_check_deps_Set_Led_On_srv[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Led_On_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Led_On_srv.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Led_On_srv.srv 
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  0%] Built target _xf_mic_asr_offline_generate_messages_check_deps_Set_Led_On_srv
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Major_Mic_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Major_Mic_srv.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Major_Mic_srv.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target _xf_mic_asr_offline_generate_messages_check_deps_Get_Major_Mic_srv[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Major_Mic_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Major_Mic_srv.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Major_Mic_srv.srv 
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  0%] Built target _xf_mic_asr_offline_generate_messages_check_deps_Get_Major_Mic_srv
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Offline_Result_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Offline_Result_srv.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Offline_Result_srv.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target _xf_mic_asr_offline_generate_messages_check_deps_Get_Offline_Result_srv[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Offline_Result_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Get_Offline_Result_srv.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Offline_Result_srv.srv 
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  0%] Built target _xf_mic_asr_offline_generate_messages_check_deps_Get_Offline_Result_srv
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_position.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_position.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_position.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target _xf_mic_asr_offline_generate_messages_check_deps_position[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_position.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_position.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg/position.msg 
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  0%] Built target _xf_mic_asr_offline_generate_messages_check_deps_position
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Awake_Word_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Awake_Word_srv.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Awake_Word_srv.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target _xf_mic_asr_offline_generate_messages_check_deps_Set_Awake_Word_srv[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Awake_Word_srv.dir/build.make CMakeFiles/_xf_mic_asr_offline_generate_messages_check_deps_Set_Awake_Word_srv.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Awake_Word_srv.srv 
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=
+[  0%] Built target _xf_mic_asr_offline_generate_messages_check_deps_Set_Awake_Word_srv
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+make[2]: 对“CMakeFiles/std_msgs_generate_messages_py.dir/build”无需做任何事。
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  0%] Built target std_msgs_generate_messages_py
+/usr/bin/make -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+make[2]: 对“CMakeFiles/std_msgs_generate_messages_nodejs.dir/build”无需做任何事。
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  0%] Built target std_msgs_generate_messages_nodejs
+/usr/bin/make -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+make[2]: 对“CMakeFiles/std_msgs_generate_messages_eus.dir/build”无需做任何事。
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  0%] Built target std_msgs_generate_messages_eus
+/usr/bin/make -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+make[2]: 对“CMakeFiles/std_msgs_generate_messages_lisp.dir/build”无需做任何事。
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  0%] Built target std_msgs_generate_messages_lisp
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_generate_messages_cpp.dir/build.make CMakeFiles/xf_mic_asr_offline_generate_messages_cpp.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/xf_mic_asr_offline_generate_messages_cpp.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target xf_mic_asr_offline_generate_messages_cpp[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_generate_messages_cpp.dir/build.make CMakeFiles/xf_mic_asr_offline_generate_messages_cpp.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[  1%] [34m[1mGenerating C++ code from xf_mic_asr_offline/Pcm_Msg.msg[0m
+cd /home/agrobot/Robot_ws/src/xf_mic_asr_offline && /home/agrobot/Robot_ws/build/xf_mic_asr_offline/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg/Pcm_Msg.msg -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/include/xf_mic_asr_offline -e /opt/ros/noetic/share/gencpp/cmake/..
+[  3%] [34m[1mGenerating C++ code from xf_mic_asr_offline/position.msg[0m
+cd /home/agrobot/Robot_ws/src/xf_mic_asr_offline && /home/agrobot/Robot_ws/build/xf_mic_asr_offline/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg/position.msg -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/include/xf_mic_asr_offline -e /opt/ros/noetic/share/gencpp/cmake/..
+[  5%] [34m[1mGenerating C++ code from xf_mic_asr_offline/Get_Offline_Result_srv.srv[0m
+cd /home/agrobot/Robot_ws/src/xf_mic_asr_offline && /home/agrobot/Robot_ws/build/xf_mic_asr_offline/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Offline_Result_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/include/xf_mic_asr_offline -e /opt/ros/noetic/share/gencpp/cmake/..
+[  7%] [34m[1mGenerating C++ code from xf_mic_asr_offline/Set_Major_Mic_srv.srv[0m
+cd /home/agrobot/Robot_ws/src/xf_mic_asr_offline && /home/agrobot/Robot_ws/build/xf_mic_asr_offline/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Major_Mic_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/include/xf_mic_asr_offline -e /opt/ros/noetic/share/gencpp/cmake/..
+[  9%] [34m[1mGenerating C++ code from xf_mic_asr_offline/Get_Major_Mic_srv.srv[0m
+cd /home/agrobot/Robot_ws/src/xf_mic_asr_offline && /home/agrobot/Robot_ws/build/xf_mic_asr_offline/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Major_Mic_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/include/xf_mic_asr_offline -e /opt/ros/noetic/share/gencpp/cmake/..
+[ 11%] [34m[1mGenerating C++ code from xf_mic_asr_offline/Start_Record_srv.srv[0m
+cd /home/agrobot/Robot_ws/src/xf_mic_asr_offline && /home/agrobot/Robot_ws/build/xf_mic_asr_offline/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Start_Record_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/include/xf_mic_asr_offline -e /opt/ros/noetic/share/gencpp/cmake/..
+[ 13%] [34m[1mGenerating C++ code from xf_mic_asr_offline/Set_Awake_Word_srv.srv[0m
+cd /home/agrobot/Robot_ws/src/xf_mic_asr_offline && /home/agrobot/Robot_ws/build/xf_mic_asr_offline/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Awake_Word_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/include/xf_mic_asr_offline -e /opt/ros/noetic/share/gencpp/cmake/..
+[ 15%] [34m[1mGenerating C++ code from xf_mic_asr_offline/Set_Led_On_srv.srv[0m
+cd /home/agrobot/Robot_ws/src/xf_mic_asr_offline && /home/agrobot/Robot_ws/build/xf_mic_asr_offline/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Led_On_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/include/xf_mic_asr_offline -e /opt/ros/noetic/share/gencpp/cmake/..
+[ 17%] [34m[1mGenerating C++ code from xf_mic_asr_offline/Get_Awake_Angle_srv.srv[0m
+cd /home/agrobot/Robot_ws/src/xf_mic_asr_offline && /home/agrobot/Robot_ws/build/xf_mic_asr_offline/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Awake_Angle_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/include/xf_mic_asr_offline -e /opt/ros/noetic/share/gencpp/cmake/..
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 17%] Built target xf_mic_asr_offline_generate_messages_cpp
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_generate_messages_py.dir/build.make CMakeFiles/xf_mic_asr_offline_generate_messages_py.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/xf_mic_asr_offline_generate_messages_py.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target xf_mic_asr_offline_generate_messages_py[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_generate_messages_py.dir/build.make CMakeFiles/xf_mic_asr_offline_generate_messages_py.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 19%] [34m[1mGenerating Python from MSG xf_mic_asr_offline/Pcm_Msg[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg/Pcm_Msg.msg -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/python3/dist-packages/xf_mic_asr_offline/msg
+[ 21%] [34m[1mGenerating Python from MSG xf_mic_asr_offline/position[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg/position.msg -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/python3/dist-packages/xf_mic_asr_offline/msg
+[ 23%] [34m[1mGenerating Python code from SRV xf_mic_asr_offline/Get_Offline_Result_srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Offline_Result_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/python3/dist-packages/xf_mic_asr_offline/srv
+[ 25%] [34m[1mGenerating Python code from SRV xf_mic_asr_offline/Set_Major_Mic_srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Major_Mic_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/python3/dist-packages/xf_mic_asr_offline/srv
+[ 26%] [34m[1mGenerating Python code from SRV xf_mic_asr_offline/Get_Major_Mic_srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Major_Mic_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/python3/dist-packages/xf_mic_asr_offline/srv
+[ 28%] [34m[1mGenerating Python code from SRV xf_mic_asr_offline/Start_Record_srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Start_Record_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/python3/dist-packages/xf_mic_asr_offline/srv
+[ 30%] [34m[1mGenerating Python code from SRV xf_mic_asr_offline/Set_Awake_Word_srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Awake_Word_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/python3/dist-packages/xf_mic_asr_offline/srv
+[ 32%] [34m[1mGenerating Python code from SRV xf_mic_asr_offline/Set_Led_On_srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Led_On_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/python3/dist-packages/xf_mic_asr_offline/srv
+[ 34%] [34m[1mGenerating Python code from SRV xf_mic_asr_offline/Get_Awake_Angle_srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Awake_Angle_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/python3/dist-packages/xf_mic_asr_offline/srv
+[ 36%] [34m[1mGenerating Python msg __init__.py for xf_mic_asr_offline[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/python3/dist-packages/xf_mic_asr_offline/msg --initpy
+[ 38%] [34m[1mGenerating Python srv __init__.py for xf_mic_asr_offline[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/python3/dist-packages/xf_mic_asr_offline/srv --initpy
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 38%] Built target xf_mic_asr_offline_generate_messages_py
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_generate_messages_nodejs.dir/build.make CMakeFiles/xf_mic_asr_offline_generate_messages_nodejs.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/xf_mic_asr_offline_generate_messages_nodejs.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target xf_mic_asr_offline_generate_messages_nodejs[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_generate_messages_nodejs.dir/build.make CMakeFiles/xf_mic_asr_offline_generate_messages_nodejs.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 40%] [34m[1mGenerating Javascript code from xf_mic_asr_offline/Pcm_Msg.msg[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg/Pcm_Msg.msg -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/gennodejs/ros/xf_mic_asr_offline/msg
+[ 42%] [34m[1mGenerating Javascript code from xf_mic_asr_offline/position.msg[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg/position.msg -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/gennodejs/ros/xf_mic_asr_offline/msg
+[ 44%] [34m[1mGenerating Javascript code from xf_mic_asr_offline/Get_Offline_Result_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Offline_Result_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/gennodejs/ros/xf_mic_asr_offline/srv
+[ 46%] [34m[1mGenerating Javascript code from xf_mic_asr_offline/Set_Major_Mic_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Major_Mic_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/gennodejs/ros/xf_mic_asr_offline/srv
+[ 48%] [34m[1mGenerating Javascript code from xf_mic_asr_offline/Get_Major_Mic_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Major_Mic_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/gennodejs/ros/xf_mic_asr_offline/srv
+[ 50%] [34m[1mGenerating Javascript code from xf_mic_asr_offline/Start_Record_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Start_Record_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/gennodejs/ros/xf_mic_asr_offline/srv
+[ 51%] [34m[1mGenerating Javascript code from xf_mic_asr_offline/Set_Awake_Word_srv.srv[0m
+[ 53%] [34m[1mGenerating Javascript code from xf_mic_asr_offline/Set_Led_On_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Awake_Word_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/gennodejs/ros/xf_mic_asr_offline/srv
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Led_On_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/gennodejs/ros/xf_mic_asr_offline/srv
+[ 55%] [34m[1mGenerating Javascript code from xf_mic_asr_offline/Get_Awake_Angle_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Awake_Angle_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/gennodejs/ros/xf_mic_asr_offline/srv
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 55%] Built target xf_mic_asr_offline_generate_messages_nodejs
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_generate_messages_eus.dir/build.make CMakeFiles/xf_mic_asr_offline_generate_messages_eus.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/xf_mic_asr_offline_generate_messages_eus.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target xf_mic_asr_offline_generate_messages_eus[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_generate_messages_eus.dir/build.make CMakeFiles/xf_mic_asr_offline_generate_messages_eus.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 57%] [34m[1mGenerating EusLisp code from xf_mic_asr_offline/Pcm_Msg.msg[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg/Pcm_Msg.msg -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/roseus/ros/xf_mic_asr_offline/msg
+[ 59%] [34m[1mGenerating EusLisp code from xf_mic_asr_offline/position.msg[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg/position.msg -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/roseus/ros/xf_mic_asr_offline/msg
+[ 61%] [34m[1mGenerating EusLisp code from xf_mic_asr_offline/Get_Offline_Result_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Offline_Result_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/roseus/ros/xf_mic_asr_offline/srv
+[ 63%] [34m[1mGenerating EusLisp code from xf_mic_asr_offline/Set_Major_Mic_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Major_Mic_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/roseus/ros/xf_mic_asr_offline/srv
+[ 65%] [34m[1mGenerating EusLisp code from xf_mic_asr_offline/Get_Major_Mic_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Major_Mic_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/roseus/ros/xf_mic_asr_offline/srv
+[ 67%] [34m[1mGenerating EusLisp code from xf_mic_asr_offline/Start_Record_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Start_Record_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/roseus/ros/xf_mic_asr_offline/srv
+[ 69%] [34m[1mGenerating EusLisp code from xf_mic_asr_offline/Set_Awake_Word_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Awake_Word_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/roseus/ros/xf_mic_asr_offline/srv
+[ 71%] [34m[1mGenerating EusLisp code from xf_mic_asr_offline/Set_Led_On_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Led_On_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/roseus/ros/xf_mic_asr_offline/srv
+[ 73%] [34m[1mGenerating EusLisp code from xf_mic_asr_offline/Get_Awake_Angle_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Awake_Angle_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/roseus/ros/xf_mic_asr_offline/srv
+[ 75%] [34m[1mGenerating EusLisp manifest code for xf_mic_asr_offline[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/roseus/ros/xf_mic_asr_offline xf_mic_asr_offline std_msgs
+WARNING: Package name "RobotCar" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "RobotCar" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "RobotCar" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+WARNING: Package name "RobotCar" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 75%] Built target xf_mic_asr_offline_generate_messages_eus
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_generate_messages_lisp.dir/build.make CMakeFiles/xf_mic_asr_offline_generate_messages_lisp.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/xf_mic_asr_offline_generate_messages_lisp.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target xf_mic_asr_offline_generate_messages_lisp[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_generate_messages_lisp.dir/build.make CMakeFiles/xf_mic_asr_offline_generate_messages_lisp.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 76%] [34m[1mGenerating Lisp code from xf_mic_asr_offline/Pcm_Msg.msg[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg/Pcm_Msg.msg -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/common-lisp/ros/xf_mic_asr_offline/msg
+[ 78%] [34m[1mGenerating Lisp code from xf_mic_asr_offline/position.msg[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg/position.msg -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/common-lisp/ros/xf_mic_asr_offline/msg
+[ 80%] [34m[1mGenerating Lisp code from xf_mic_asr_offline/Get_Offline_Result_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Offline_Result_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/common-lisp/ros/xf_mic_asr_offline/srv
+[ 82%] [34m[1mGenerating Lisp code from xf_mic_asr_offline/Set_Major_Mic_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Major_Mic_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/common-lisp/ros/xf_mic_asr_offline/srv
+[ 84%] [34m[1mGenerating Lisp code from xf_mic_asr_offline/Get_Major_Mic_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Major_Mic_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/common-lisp/ros/xf_mic_asr_offline/srv
+[ 86%] [34m[1mGenerating Lisp code from xf_mic_asr_offline/Start_Record_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Start_Record_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/common-lisp/ros/xf_mic_asr_offline/srv
+[ 88%] [34m[1mGenerating Lisp code from xf_mic_asr_offline/Set_Awake_Word_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Awake_Word_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/common-lisp/ros/xf_mic_asr_offline/srv
+[ 90%] [34m[1mGenerating Lisp code from xf_mic_asr_offline/Set_Led_On_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Set_Led_On_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/common-lisp/ros/xf_mic_asr_offline/srv
+[ 92%] [34m[1mGenerating Lisp code from xf_mic_asr_offline/Get_Awake_Angle_srv.srv[0m
+catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/agrobot/Robot_ws/src/xf_mic_asr_offline/srv/Get_Awake_Angle_srv.srv -Ixf_mic_asr_offline:/home/agrobot/Robot_ws/src/xf_mic_asr_offline/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p xf_mic_asr_offline -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/share/common-lisp/ros/xf_mic_asr_offline/srv
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 92%] Built target xf_mic_asr_offline_generate_messages_lisp
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_gencpp.dir/build.make CMakeFiles/xf_mic_asr_offline_gencpp.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/xf_mic_asr_offline_gencpp.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target xf_mic_asr_offline_gencpp[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_gencpp.dir/build.make CMakeFiles/xf_mic_asr_offline_gencpp.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+make[2]: 对“CMakeFiles/xf_mic_asr_offline_gencpp.dir/build”无需做任何事。
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 92%] Built target xf_mic_asr_offline_gencpp
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_generate_messages.dir/build.make CMakeFiles/xf_mic_asr_offline_generate_messages.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/xf_mic_asr_offline_generate_messages.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target xf_mic_asr_offline_generate_messages[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/xf_mic_asr_offline_generate_messages.dir/build.make CMakeFiles/xf_mic_asr_offline_generate_messages.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+make[2]: 对“CMakeFiles/xf_mic_asr_offline_generate_messages.dir/build”无需做任何事。
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 92%] Built target xf_mic_asr_offline_generate_messages
+/usr/bin/make -f CMakeFiles/call_recognition.dir/build.make CMakeFiles/call_recognition.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/call_recognition.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target call_recognition[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/call_recognition.dir/build.make CMakeFiles/call_recognition.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 94%] [32mBuilding CXX object CMakeFiles/call_recognition.dir/src/call_recognition.cpp.o[0m
+/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"xf_mic_asr_offline\" -I/home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/include -I/home/agrobot/Robot_ws/src/xf_mic_asr_offline/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g    -std=c++11 -o CMakeFiles/call_recognition.dir/src/call_recognition.cpp.o -c /home/agrobot/Robot_ws/src/xf_mic_asr_offline/src/call_recognition.cpp
+[ 96%] [32m[1mLinking CXX executable /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/xf_mic_asr_offline/call_recognition[0m
+/usr/bin/cmake -E cmake_link_script CMakeFiles/call_recognition.dir/link.txt --verbose=1
+/usr/bin/c++    -g   -rdynamic CMakeFiles/call_recognition.dir/src/call_recognition.cpp.o  -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/xf_mic_asr_offline/call_recognition   -L/home/agrobot/Robot_ws/src/xf_mic_asr_offline/lib/x64  -Wl,-rpath,/home/agrobot/Robot_ws/src/xf_mic_asr_offline/lib/x64:/opt/ros/noetic/lib /opt/ros/noetic/lib/libtf.so /opt/ros/noetic/lib/libtf2_ros.so /opt/ros/noetic/lib/libactionlib.so /opt/ros/noetic/lib/libmessage_filters.so /opt/ros/noetic/lib/libroscpp.so -lpthread /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/libtf2.so /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so -llog4cxx /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4 
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 96%] Built target call_recognition
+/usr/bin/make -f CMakeFiles/voice_control.dir/build.make CMakeFiles/voice_control.dir/depend
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+cd /home/agrobot/Robot_ws/build/xf_mic_asr_offline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/src/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles/voice_control.dir/DependInfo.cmake --color=
+[35m[1mScanning dependencies of target voice_control[0m
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/make -f CMakeFiles/voice_control.dir/build.make CMakeFiles/voice_control.dir/build
+make[2]: 进入目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[ 98%] [32mBuilding CXX object CMakeFiles/voice_control.dir/src/voice_control.cpp.o[0m
+/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"xf_mic_asr_offline\" -I/home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/include -I/home/agrobot/Robot_ws/src/xf_mic_asr_offline/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g    -std=c++11 -o CMakeFiles/voice_control.dir/src/voice_control.cpp.o -c /home/agrobot/Robot_ws/src/xf_mic_asr_offline/src/voice_control.cpp
+[01m[K/home/agrobot/Robot_ws/src/xf_mic_asr_offline/src/voice_control.cpp:[m[K In function ‘[01m[Kbool Get_Offline_Recognise_Result(xf_mic_asr_offline::Get_Offline_Result_srv::Request&, xf_mic_asr_offline::Get_Offline_Result_srv::Response&)[m[K’:
+[01m[K/home/agrobot/Robot_ws/src/xf_mic_asr_offline/src/voice_control.cpp:578:18:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  578 |   whole_result = [01;35m[K""[m[K;
+      |                  [01;35m[K^~[m[K
+[100%] [32m[1mLinking CXX executable /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/xf_mic_asr_offline/voice_control[0m
+/usr/bin/cmake -E cmake_link_script CMakeFiles/voice_control.dir/link.txt --verbose=1
+/usr/bin/c++    -g   -rdynamic CMakeFiles/voice_control.dir/src/voice_control.cpp.o  -o /home/agrobot/Robot_ws/devel/.private/xf_mic_asr_offline/lib/xf_mic_asr_offline/voice_control   -L/home/agrobot/Robot_ws/src/xf_mic_asr_offline/lib/x64  -Wl,-rpath,/home/agrobot/Robot_ws/src/xf_mic_asr_offline/lib/x64:/opt/ros/noetic/lib /opt/ros/noetic/lib/libtf.so /opt/ros/noetic/lib/libtf2_ros.so /opt/ros/noetic/lib/libactionlib.so /opt/ros/noetic/lib/libmessage_filters.so /opt/ros/noetic/lib/libroscpp.so -lpthread /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/libtf2.so /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so -llog4cxx /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4 -loffline_record_lib -lhid_lib -lrt -ldl -lpthread -lstdc++ 
+make[2]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+[100%] Built target voice_control
+make[1]: 离开目录“/home/agrobot/Robot_ws/build/xf_mic_asr_offline”
+/usr/bin/cmake -E cmake_progress_start /home/agrobot/Robot_ws/build/xf_mic_asr_offline/CMakeFiles 0

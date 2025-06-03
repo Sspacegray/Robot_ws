@@ -1,0 +1,1 @@
+/home/agrobot/Robot_ws/devel/.private/vanjee_mini_lidar/lib/python3/dist-packages/vanjee_mini_lidar/cfg/__init__.py
